@@ -1,5 +1,6 @@
 --!native
 --!optimize 2
+repeat task.wait() until game:IsLoaded(); repeat task.wait() until game:GetService('Players') ~= nil; repeat task.wait() until game:GetService('Players').LocalPlayer ~= nil; repeat task.wait() until game:GetService('Players').LocalPlayer.Kick ~= nil
 
 -- Very very lame.. -_-
 do local a=coroutine.yield;do local checkcaller=checkcaller;local b;b=hookfunction(game:GetService("Players").LocalPlayer.Kick,function(...)if checkcaller()then local self,c=...if c=="Haha"then while true do a()end;return end end;return b(...)end)end;local type=type;local getrawmetatable=getrawmetatable;local b;b=hookfunction(request,function(...)local d=...if type(d)=="table"and getrawmetatable(d)then while true do a()end;return end;return b(...)end)end
